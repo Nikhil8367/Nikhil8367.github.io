@@ -15,6 +15,11 @@ body {
         box-sizing: border-box;
       }
       
+      .sub-mobile {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
       .mobile {
         background-color: #fff;
         border-radius: 10px;
@@ -24,12 +29,38 @@ body {
         width: 100%;
       }
       
+      .mobile-img {
+        width: 100%;
+        max-width: 50%;
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        overflow: hidden;
+      }
+      
       .mobile-img img {
         width: 50%;
         height: auto;
         object-fit: cover;
       }
-
+      
+      .specs {
+        padding: 20px;
+        width: 100%;
+      }
+      
+      /* For screens larger than 768px (laptops) */
+      @media screen and (min-width: 769px) {
+        .mobile-img {
+          max-width: 30%; /* Adjusted width for laptop screens */
+          width: 30%;
+        }
+      
+        .specs {
+          max-width: 70%; /* Adjusted width for laptop screens */
+          width: 70%;
+        }
+      }
+      
 .specs ul {
   list-style-type: none;
   padding: 0;
