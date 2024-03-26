@@ -1,0 +1,2088 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mobifi</title>
+</head>
+
+<body>
+
+    <h1>Mobifi</h1>
+    <div class="right-side">
+        <a href="https://nikhil8367.github.io/Upcoming-Mobiles/">
+            upcoming mobiles
+        </a>
+        <a href="https://nikhil8367.github.io/Upcoming-Mobiles/">
+            upcoming mobiles
+        </a>
+    </div>
+    <br>
+    <div id="searchContainer">
+        <div id="searchInputs">
+            <input type="text" id="searchInput" placeholder="Search for mobiles">
+            <button id="searchButton">Search</button>
+        </div>
+    </div>
+</div>
+<br>
+<!-- Budget range bar -->
+<div class="range-container">
+    <label for="budgetRange">Select a budget range:</label>
+    <input type="range" min="100" max="200000" value="200000" class="range-slider" id="budgetRange">
+    <p>Budget: <span id="budgetValue">200000</span></p>
+</div>
+</div>
+<br> 
+   <div id="sortContainer">
+    <label for="sortSelect" style="color:black">Sort by:</label>
+    <select id="sortSelect">
+        <option value="price-low-to-high">Price: Low to High</option>
+        <option value="price-high-to-low">Price: High to Low</option>
+        <option value="name-a-to-z">Name: A to Z</option>
+        <option value="name-z-to-a">Name: Z to A</option>
+    </select>
+</div>
+<br>
+<button id="toggleFiltersButton" tabindex="0">Toggle Filters</button>
+<div id="filtersContainer">
+    <button class="hide-filter-btn" onclick="toggleFilters()">Hide Filters</button>
+    <button id="resetFiltersButton" class="reset-filters-btn">Reset Filters</button>
+
+    <h2 style="color:black">Sort by company</h2>
+    <div class="sidebar">
+        <div id="brandFilters">
+            <label class="brand-filter">
+                <input type="checkbox" id="appleCheckbox" class="brand-checkbox" value="apple"> Apple
+            </label>
+            <label class="brand-filter">
+                <input type="checkbox" id="samsungCheckbox" class="brand-checkbox" value="samsung"> Samsung
+            </label>
+            <label class="brand-filter">
+                <input type="checkbox" id="vivoCheckbox" class="brand-checkbox" value="vivo"> Vivo
+            </label>
+            <label class="brand-filter">
+                <input type="checkbox" id="iqooCheckbox" class="brand-checkbox" value="iqoo"> IQOO
+            </label>
+            <label class="brand-filter">
+                <input type="checkbox" id="realmeCheckbox" class="brand-checkbox" value="realme"> realme
+            </label>
+            <label class="brand-filter">
+                <input type="checkbox" id="oneplusCheckbox" class="brand-checkbox" value="oneplus"> OnePlus
+            </label>
+            <label class="brand-filter">
+                <input type="checkbox" id="redmiCheckbox" class="brand-checkbox" value="redmi"> Redmi
+            </label>
+            <label class="brand-filter">
+                <input type="checkbox" id="pocoCheckbox" class="brand-checkbox" value="poco"> POCO
+            </label>
+            <label class="brand-filter">
+                <input type="checkbox" id="motorolaCheckbox" class="brand-checkbox" value="motorola"> Motorola
+            </label>
+            <label class="brand-filter">
+                <input type="checkbox" id="oppoCheckbox" class="brand-checkbox" value="oppo"> OPPO
+            </label>
+            <label class="brand-filter">
+                <input type="checkbox" id="tecnoCheckbox" class="brand-checkbox" value="tecno"> Tecno
+            </label>
+            <label class="brand-filter">
+                <input type="checkbox" id="furCheckbox" class="brand-checkbox" value="fur"> Furniture
+            </label>
+            <!-- Add more brand checkboxes as needed -->
+            
+        </div>
+    </div>
+</div>
+
+<div class="main-content">
+    <div class="mobile-container">
+
+            
+                <div class="mobile" data-price="471" data-brand="iqoo">
+                    
+                    <div class="mobile-img">
+                        <img src="32.jpg" alt="Mobile">
+                        </div>
+                    <div class="specs">
+                        <h2>The book of five rings </h2>
+                        <ul>
+                            <li>Cost: 471/-</li>
+                            <li>Mass market paper</li>
+                            <li>It is composed in 1643 by miyamoto mushashi</li>
+                        </ul>
+                        <a href="https://www.amazon.in/dp/1590302486?&linkCode=ll1&tag=nikhil834134-21&linkId=aa2ba10dace64be3121f269c54f80dd0&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+            </div>
+                <div class="mobile" data-price="30999" data-brand="iqoo">
+                    <div class="mobile-img">
+                        <img src="3.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>IQOO Neo 7 pro</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.19 GHz, Single core + 2.75 GHz, Tri core + 2 GHz, Quad core)</li>
+                            <li>Processor:Snapdragon 8 Plus Gen 1</li>
+                            <li>Ram:8 GB RAM</li>
+                            <li>Front Cam:16MP</li>
+                            <li>Rear Cam:50MP+8MP+2MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.78 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/dp/B07WGNJF9L?_encoding=UTF8&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=f577965c81996049c8cef8020a56bea8&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="3498" data-brand="fur">
+                    <div class="mobile-img">
+                        <img src="33.jpg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Wakefit study table</h2>
+                        <ul>
+                            <li>Study table for students</li>
+                            <li>Computer table</li>
+                            <li>Two open shelves</li>
+                            <li>Free installation</li>
+                            <li>Cost: 3,498/-</li>
+                        </ul>
+                        <a href="https://www.amazon.in/KVS-Furniture-Students-Computer-Engineered/dp/B0CNH16MP4?crid=1PHPO337KE8OR&dib=eyJ2IjoiMSJ9.NmF493IkHz1Joh1a-xARQmigqEpTXT2JkJC9GB9nC8rmCXhKw2SWFBRVkIJR4sUGjZOLm1Ng1HcoXTOeO8Ly_e7M46d7Vt0-nS8p1t2CoQtEieGJzT-0KdDVqYJ5TsKc5AZ_t9NSpySpvhIOt-GI4RfdTnk2aAPYzF-BQKI1qBwILr3-8Y7D8qiAKUsmtQEVeZuoRcrNhN5s_yS4Lhb4PF-uvFM0m47FoQyLn8-3D8zct7wBKp5kAeeALE3SVLN3PkJEBlyIMZdpnElGkzy8r5Z_wYP4ZDwdZhdgzQerk8E.Qx87yausAdjKdyri4J5fW6hHc4woPHe8UzgvEzfodG0&dib_tag=se&keywords=wakefit+study+table&qid=1711424898&sprefix=wake+fit+study+table%2Caps%2C267&sr=8-3-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll1&tag=nikhil834134-21&linkId=e5634c254968bdb8aa449f1d8078a625&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="6749" data-brand="fur">
+                    <div class="mobile-img">
+                        <img src="34.jpg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Green Soul New York Go Office Chair</h2>
+                        <ul>
+                            <li>High back mesh</li>
+                            <li>2D Adjustable Headrest</li>
+                            <li>Lumbar and support</li>
+                            <li>Knee-tilt Mechanism</li>
+                            <li>Strong Nylon base</li>
+                            <li>Cost: 6,749/-</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Green-Soul-Go-Ergonomic-Adjustable/dp/B0BGHRBKBQ?crid=2KSYD0O9UMQA0&dib=eyJ2IjoiMSJ9.x9tmLWH5ie5IfzzHBUxiEHKWA5DypfptB0PjHEmQE-_23zBK6jzuDPvF1JHwMR9mFUXzotrPWrjjHHw_W1FNCNf-Z2kfpDE_AyRrixK9rOFeaZMqEa5Kq260U9SwymWgUvSr0apDWwvIK3KFHoHCiAtfMRv4_iB_0o0_GgK6w5j7dsCwu0glXzr51_KPZlWQLRGWGdOakDxu6y8QRgA-uyRRD4gwHbvPycdXyug7i7sIMRhBwKB0dyFjs5miiSNZF990pOS-gcYvfH9vQhM1PiROlnTXRTYg7KLxBOnL95E.giPKZK5H_1eMc2UVMvcpJazgATvR0uARKW0cwbHqsnY&dib_tag=se&keywords=green+soul+new+york+go+office+chair&qid=1711425946&sprefix=green+soul+new+york+go+office+chair%2Caps%2C249&sr=8-5&linkCode=ll1&tag=nikhil834134-21&linkId=7679a5dce749f4c5ef34d002229f503b&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="14999" data-brand="tecno">
+                    <div class="mobile-img">
+                        <img src="4.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Tecno Spark 20</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (2.2 GHz,Dual Core + 2 GHz,Hexa Core)</li>
+                            <li>Processor:MediaTek Helio G85 Ultimate</li>
+                            <li>Ram:16 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.56 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Gravity-Display-Dynamic-Speakers-Processor/dp/B0CSJMRBYF?crid=3IMJX090FX5PX&dib=eyJ2IjoiMSJ9.nVu3X_ggWbWLXTobBZoSQ9MAT1BhY2ZEaqCGNoN10jwMvXp8vHxov7ocGH1wfrbvmoOv17g88fVVe0MtoMV3FfcbbXnB8OXJwSuK7pYjsakj9_qYLzXpLdx6DBkp2xhcSuyudR3EyulRwxx4RbfT7g-Wuc72m3K9sjXqd0aWT_tdt9MBFAozwHBLcvbhAhQ4qfix-Doc7pYze-lHKaK8wEc-sUvAylJLAVR2UWgL5ojqlmgLvYj_4Xt3GnfvI5uHjUZ3YA704-lfc5QGA5iai8dRodsjaUbmGxy-thoxi34.aALew8-zTXFcw9DkaQhzQQkaMIlowzUa15UH807BW8k&dib_tag=se&keywords=tecno%2Bspark%2B20%2Bpro%2Bplus&qid=1709289716&s=electronics&sprefix=tecno%2Bspark%2B20%2Bpro%2Bplu%2Celectronics%2C282&sr=1-2&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=6805a8f9af86ef3bd27db31fa7121760&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="14999" data-brand="tecno">
+                    <div class="mobile-img">
+                        <img src="4.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Tecno Spark 20</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (2.2 GHz,Dual Core + 2 GHz,Hexa Core)</li>
+                            <li>Processor:MediaTek Helio G85 Ultimate</li>
+                            <li>Ram:16 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.56 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Gravity-Display-Dynamic-Speakers-Processor/dp/B0CSJMRBYF?crid=3IMJX090FX5PX&dib=eyJ2IjoiMSJ9.nVu3X_ggWbWLXTobBZoSQ9MAT1BhY2ZEaqCGNoN10jwMvXp8vHxov7ocGH1wfrbvmoOv17g88fVVe0MtoMV3FfcbbXnB8OXJwSuK7pYjsakj9_qYLzXpLdx6DBkp2xhcSuyudR3EyulRwxx4RbfT7g-Wuc72m3K9sjXqd0aWT_tdt9MBFAozwHBLcvbhAhQ4qfix-Doc7pYze-lHKaK8wEc-sUvAylJLAVR2UWgL5ojqlmgLvYj_4Xt3GnfvI5uHjUZ3YA704-lfc5QGA5iai8dRodsjaUbmGxy-thoxi34.aALew8-zTXFcw9DkaQhzQQkaMIlowzUa15UH807BW8k&dib_tag=se&keywords=tecno%2Bspark%2B20%2Bpro%2Bplus&qid=1709289716&s=electronics&sprefix=tecno%2Bspark%2B20%2Bpro%2Bplu%2Celectronics%2C282&sr=1-2&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=6805a8f9af86ef3bd27db31fa7121760&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="14999" data-brand="tecno">
+                    <div class="mobile-img">
+                        <img src="4.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Tecno Spark 20</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (2.2 GHz,Dual Core + 2 GHz,Hexa Core)</li>
+                            <li>Processor:MediaTek Helio G85 Ultimate</li>
+                            <li>Ram:16 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.56 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Gravity-Display-Dynamic-Speakers-Processor/dp/B0CSJMRBYF?crid=3IMJX090FX5PX&dib=eyJ2IjoiMSJ9.nVu3X_ggWbWLXTobBZoSQ9MAT1BhY2ZEaqCGNoN10jwMvXp8vHxov7ocGH1wfrbvmoOv17g88fVVe0MtoMV3FfcbbXnB8OXJwSuK7pYjsakj9_qYLzXpLdx6DBkp2xhcSuyudR3EyulRwxx4RbfT7g-Wuc72m3K9sjXqd0aWT_tdt9MBFAozwHBLcvbhAhQ4qfix-Doc7pYze-lHKaK8wEc-sUvAylJLAVR2UWgL5ojqlmgLvYj_4Xt3GnfvI5uHjUZ3YA704-lfc5QGA5iai8dRodsjaUbmGxy-thoxi34.aALew8-zTXFcw9DkaQhzQQkaMIlowzUa15UH807BW8k&dib_tag=se&keywords=tecno%2Bspark%2B20%2Bpro%2Bplus&qid=1709289716&s=electronics&sprefix=tecno%2Bspark%2B20%2Bpro%2Bplu%2Celectronics%2C282&sr=1-2&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=6805a8f9af86ef3bd27db31fa7121760&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="31200" data-brand="vivo">
+                    <div class="mobile-img">
+                        <img src="5.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Vivo V29</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (2.4 GHz, Single core, + 2.4 GHz, Tri core, + 1.8 GHz, Quad core)</li>
+                            <li>Processor:Snapdragon 778G</li>
+                            <li>Ram:8 GB RAM</li>
+                            <li>Front Cam:50MP</li>
+                            <li>Rear Cam:50MP+8MP+2MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.78 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Vivo-V29-Blue-128-RAM/dp/B0CLDQY1ZH?crid=2EK4SV81PTTX1&dib=eyJ2IjoiMSJ9.C1Jf9AGpQxBBxC-Y6fEnsDOJcM4_dPdoq7DKr-MDHCTYVJmzyfg1bq3ecRbE0sh8g6E2djSOSPQZx6ZPhdhSYcQOnt9uJXFOPQKc4ltMoN2mpkp84Ra9b_aDZ_ZenTkH1fPg5j6h1X6-5SK7tI_rt3Tb8c4NXDIBnAISGnGfqtpia0tgeR7Wk4SuoawqRztBhNhliivOpzUOjLf0W0l13Qi42TcdJiH_zKUJvwweDicQ1UKYLXXC4EFvcvw1bcFb4Lpz391lylQ0uYGafDJ-0eFEJpeoM-oBFLYZSarNPIY.zzW_GSqRJDRcNAlXmupDQ9nS9oo_7DwlYMdjtZ_-HTg&dib_tag=se&keywords=vivo%2Bv29&qid=1709289887&s=electronics&sprefix=vivo%2Bv29%2Celectronics%2C334&sr=1-2&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=52f992e49f1e3bf14516e6d290a5448b&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="24082" data-brand="redmi">
+                    <div class="mobile-img">
+                        <img src="6.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Xiaomi Redmi Note 13 Pro</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (2.4 GHz,Quad Core + 1.95 GHz,Quad Core)</li>
+                            <li>Processor:Snapdragon 7s Gen 2</li>
+                            <li>Ram:8 GB RAM</li>
+                            <li>Front Cam:16MP</li>
+                            <li>Rear Cam:200MP+8MP+2MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.67 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Redmi-Arctic-White-128GB-Storage/dp/B0CRQFGKXG?crid=2GNLKN5IR6S9E&dib=eyJ2IjoiMSJ9.qsb_ges_gAVxVAcv8cuGfl8dgaTq8ZGo2Zi37gbGftjEcON-0VcikoDJxorYP3iRx4jl4DCgcji14PLrFtofv7qhlLzn3QpjBASZxllsX-MpbTfFMGdD5lTMhflAPxyurMEYAFXc_pSZoAflCK3oFBN4IB1BJsZn9A8tpAKxcAqmu0nQ2x6uoQ0jb8bu_XHMdeMg2t_x0eh_nARNbncdEf6NDXzow3Zzi407Xo0GBF_TXantSGMZuLfE-c8_FI5bGe7CKYCPveBcYGniBlqoHskgXaVcawoFlqOQc68r6vo.kh8_y02OKeSHAgDi8mKbVVig70BFQm70B7NAjJ5hQJc&dib_tag=se&keywords=redmi+note+13+pro&qid=1709289983&s=electronics&sprefix=redmi+not+13+po%2Celectronics%2C291&sr=1-1&linkCode=ll1&tag=nikhil834134-21&linkId=5885b195a6af4d857960c512dae18a31&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="7999" data-brand="redmi">
+                    <div class="mobile-img">
+                        <img src="7.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Xiaomi Redmi 13C</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (2 GHz, Dual core + 1.8 GHz,Hexa Core)</li>
+                            <li>Processor:MediaTek Helio G85</li>
+                            <li>Ram:4 GB RAM</li>
+                            <li>Front Cam:8MP</li>
+                            <li>Rear Cam:50MP+2MP+0.08MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.74 inches</li>
+                            <li>Battery:5000mAh</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Stardust-Storage-Powered-Mediatek-Display/dp/B0CMTTRN8M?crid=2E2P8T050YRRL&dib=eyJ2IjoiMSJ9.9oESETZKfOhW_PjU1s0e0lboLb7EnucmVuTShow10KtDmVy8GPU5_yyt5pju5yFdRYGJkwOF0Qwv-GK4rdQrmJNs0VNXgR3p6Rt4c5BggYlXXxKsBZvGe-1S4VEZOA9PVH6hRgBacYOIefQ1eWs5qr3NsUdH1RJgSTvJywfiTYVzT4AhQcun4PYH2souiJ11nkvSJGA1NEh8xbQ5De7qOQsXv0XfkkZu6zUWqMBKWKqsdpEm2vSC5EeroWrow42GwBfDCF7Utig9pdxN__eBSFD7OQzfdhxL-iWVa0Gfadw.B5R9UZwgEdJRDqbXTqTLOCXenW3yZVDgSdgoXr99S_Y&dib_tag=se&keywords=redmi+13+c&qid=1709290027&s=electronics&sprefix=redmi+13+%2Celectronics%2C327&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll1&tag=nikhil834134-21&linkId=901abab239ee7d4bddfab686535cde99&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="39999" data-brand="oneplus">
+                    <div class="mobile-img">
+                        <img src="8.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>OnePlus 12R</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.2 GHz, Single core + 2.8 GHz, Tri core + 2 GHz, Quad core)</li>
+                            <li>Processor:Snapdragon 8 Gen 2</li>
+                            <li>Ram:8 GB RAM</li>
+                            <li>Front Cam:16MP</li>
+                            <li>Rear Cam:50MP+8MP+2MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.78 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/OnePlus-Cool-Blue-128GB-Storage/dp/B0CQYMVLQ4?crid=TPYTBBUVMU80&dib=eyJ2IjoiMSJ9.FZaDZ6l3D-ildTQ3EcQ9EOlsPr3ew0-_puFrPX8eNR4pS-1ilQCPn_A77Dgco6gl0hSEFVSCmTaO_AtliE5MBOct_G_5B3FT2MUNsYr61XJBOE9A7JaJCiOa5yaAsdyQbsK7cHe0GdH0Mic18DBUEyfWptgp0HBL3oPH6BrDbUMZ1B9-U4W5c4gXQDhcUsWdsX64Wc8n8T2lTlfRnEEVyZbwvvJ5YqfQ2nP__r3VIdqR712ov4_lOeDBAOETpo13pzFEjRCd_mkDuFEiYK4dNJlprpRALEaIETJM3kSkpJs.5WVQ72XE23S2d2og37mAjVzEDz_iGheTK6IM0bLauwk&dib_tag=se&keywords=one%2B12r&qid=1709290145&s=electronics&sprefix=one%2B12%2Celectronics%2C333&sr=1-4&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=9595e5df4eda8ab7f647d5d89ec1479f&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="64999" data-brand="oneplus">
+                    <div class="mobile-img">
+                        <img src="9.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>OnePlus 12</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.82 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/OnePlus-Silky-Black-256GB-Storage/dp/B0CQPM5WMB?crid=17ZIOEPR17KOJ&dib=eyJ2IjoiMSJ9.q_NrwcfsCis9QXzJGWpQRGrIW8zioSIw7MnEnFsslwH9dPNR3YYfT8ml2e4Cs9iSIM6I4dE8VLspyPWozfK9Poz8o9Du6B0ASm7twk5biZ60-sLS7tO8xacJqW67sEenvix96cA-9VmDtUgaxZyRBQy2hewWcsQowr1ZFM7NlP5wjKh3bxQSq_KtQ8IxU4I7-3qcmF4eL2WbuGXubfZ7fDZ4xDUDjbNwGn0i3H4N1IrhMjH96kuH5Uw0cCnjM8hQaLA03ZKpVOrPdSpzScFcPH9obnjXSXJxdC8_A9CSqTk.sseV2G3pp6Hk2iIzLtntWqB715L2PakIKU8OYmb7fpc&dib_tag=se&keywords=one+12&qid=1709290103&s=electronics&sprefix=one+1%2Celectronics%2C320&sr=1-6&linkCode=ll1&tag=nikhil834134-21&linkId=16bb19ad1959ab700b7d1b4a76cd5a2c&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="96480" data-brand="samsung">
+                    <div class="mobile-img">
+                        <img src="10.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (3.36 GHz, Single core + 2.8 GHz, Tri core + 2 GHz, Quad core)</li>
+                            <li>Processor:Snapdragon 8 Gen 2</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:12MP</li>
+                            <li>Rear Cam:200MP+12MP+10MP+10MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.8 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Samsung-Galaxy-Ultra-Phantom-Storage/dp/B0BTWQZBGP?crid=3GYPKKSF142RR&dib=eyJ2IjoiMSJ9.3OqWCf54Pwi5DiZqq8tPfmUX-bG1NH4aCIbzrJWbnVPS_XwN2GPkDgM8mXxnDMLJ5oRE8kvuk0vHKjwgJcFS_X0AkAUuLk5bHcOsjlfcACRWvW1yB7QXqBa8Fk4hSx3E9GJoMSE5CTVMApCWs3obfsf2vpnXceqjotoLHTBSK3WEmMBc6oP9OHCcBAfIUbnYa6GXdkTIQ4imhKr83Lx1uCIOyJIeQAkIJ7xqfyW0SQLXbXzLdQCU_P7bmr-W6IqwKvE1D0J6Qd9t-kyW18_8VxlJtTef5TiVpiJaEmHcq7g.wGxlkoGS3_9eUJUycQuJZmCgI54NVSMjB_jhZcAM6Ns&dib_tag=se&keywords=23+ultra&qid=1709290218&s=electronics&sprefix=23+ultr%2Celectronics%2C311&sr=1-4&linkCode=ll1&tag=nikhil834134-21&linkId=f94aadd96c3bd041efd0ac7b24b41838&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="129999" data-brand="samsung">
+                    <div class="mobile-img">
+                        <img src="11.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s24 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.39 GHz, Single core + 3.1 GHz, Tri core + 2.2 GHz, Quad core)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:12MP</li>
+                            <li>Rear Cam:200MP+12MP+10MP+50MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Samsung-Galaxy-Smartphone-Titanium-Storage/dp/B0CS5XW6TN?crid=3F9OTWW2C91RJ&dib=eyJ2IjoiMSJ9.QGKqjjLJFs8O54SZlphDLbZn86re_imeD0YOipw8YGxQBiYZ9tlLQsLN_xdNtuo8ZuasAku-gj7lYjgr3QjKJwjEvGLOcK66wMXWWag8Tq71ktuRBzu_2M5aKScSLa1qQT2PAdMq11JESakdbPKLyWKhGhvd6IQQRTAAp47bKJbYzOIm63oK0evdq40lCZhKMByDVTMMa6jLFx7ZhZY7wKqLNqVgectM6a-NKm7Rw0IqIdGV7ho2VGcvxfiOBG7Zm7VApYUVeVMMKUCm045k7Zzo8xxpfj2nUtrbiLzeoBA.w1acJTpVjRWqOAgzmm8e0R39-Ca5yASIi3LD-N439Hw&dib_tag=se&keywords=24+ultra&qid=1709290289&s=electronics&sprefix=24+ultra%2Celectronics%2C278&sr=1-4&linkCode=ll1&tag=nikhil834134-21&linkId=c8131d192c4f23a237dfa132cebdc678&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="36999" data-brand="iqoo">
+                    <div class="mobile-img">
+                        <img src="12.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>IQOO Neo 9 Pro</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.2 GHz, Single core + 2.8 GHz, Tri core + 2 GHz, Quad core)</li>
+                            <li>Processor:Snapdragon 8 Gen 2</li>
+                            <li>Ram:8 GB RAM</li>
+                            <li>Front Cam:16MP</li>
+                            <li>Rear Cam:50MP+8MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.78 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/iQOO-Snapdragon-Processor-Supercomputing-Flagship/dp/B07WDKMGWR?crid=250YKLR325VLF&dib=eyJ2IjoiMSJ9.PJ-KVAI_FjDi8qs6UbVUE5uNPLDG-RE3qXnhLHlaOHH89TwCQAgi96jrVy7gOeolcJj7ag4fHD0OJwSXXjFF4HOYKCNpbZOlo_3oQ6JCK7hEKzbkbnqRRFKwaaUJ9Kg0YzVpnhCdi_Ba4I6vVM6PDHEPnrfPhB_Fq4I9jZd4kenKmhKaWMHsgtfoL7PAbX5xnAqZLJqXwqKplqwT3M3pdPq6MM6cRZWOcu3fmCyaYc2p9WH1j58nPLgtNYyBjFVutVCqwiUAv9Zjx8IzhLiYo3hOfKGM7zmeMnMA_Ab60C8.pKQh0cyyzQlM06cHSt6IKjRb-Y8cLMK5IQwSpqnMsV0&dib_tag=se&keywords=neo%2B9%2Bpro&qid=1709290411&s=electronics&sprefix=neo%2B9%2Bpro%2Celectronics%2C244&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=afda8365eb5b10c1dbd565d3559b77ab&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="28948" data-brand="oppo">
+                    <div class="mobile-img">
+                        <img src="13.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>OPPO Reno11</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (2.6 GHz, Dual core + 2 GHz, Hexa core)</li>
+                            <li>Processor:MediaTek Dimensity 7050</li>
+                            <li>Ram:8 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+8MP+32MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.7 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Oppo-Reno-Rock-Grey-128/dp/B0CTT6W27Z?crid=18Q8QRYC7SUVD&dib=eyJ2IjoiMSJ9.zauN_pwWUIdgkSMIBZ-unCCTN8pJHYpzHB16IhXtglt9UrvyWOZ79_qQCUkeJIi0RndLGPXMIXL3buqqfzF1IYC7s6YuLeLheKhcB5BHMlWET-iUcvD2tpMIxrabEcSIQNKH7Rifbka6dxYo7d0aU4u0-aiQ0AxQybsayAWg8wnCkEq0PZRSjGwLgQurdXljPiKB4wQUABIMCvXS7HWAcg2PpKimrj7sOpLf2mtxZN6CaBlOvgt2XxXrb_FPq7Rm-hynl5qIX3GeUXn2d1UP6AVQ6TvKMyQwtJxen8Tf2Ow.2Y1wQQE9MVhF4smfAoCApf2e6yd62sGb_LVbDWbjbBY&dib_tag=se&keywords=reno+11&qid=1709290445&s=electronics&sprefix=reno+1%2Celectronics%2C305&sr=1-2&linkCode=ll1&tag=nikhil834134-21&linkId=c2cf3412c67e525c4a436451e5602fab&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="9138" data-brand="realme">
+                    <div class="mobile-img">
+                        <img src="14.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>realme C53</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (1.8 GHz,Dual Core + 1.8GHz,Hexa Core)</li>
+                            <li>Processor:Unisoc T612</li>
+                            <li>Ram:6 GB RAM</li>
+                            <li>Front Cam:8MP</li>
+                            <li>Rear Cam:108MP</li>
+                            <li>Storage:64 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.74 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/realme-Champion-Black-128GB-Storage/dp/B0CC9VBF8Z?crid=36JVZP79Q5M59&dib=eyJ2IjoiMSJ9.kydfha8pkNp_FJHOuS9U_G0uOx5aQflb0tBaKsemBSUR1GHqw_wAa_8ZmBocdbgI9WNrXCBE_V1VsONc5Cphde-duo4c07_BDwkLIA8v4lOjZX5CeKz9KNh__fsRRAoZjaTXGt3FLEIb_YjzL_Rg2zQTHkrwUNOafiAQVKpmYFFtcS_F52I8Kvw8khrPDgcgtSzN2PHs6Xprt71s8ZXbu-cF12ki8BheKWjab85wAQZN0PMngseOWK5SS0oF4MrwjAmf3Si-vgeA453DDVaOA4DH9WbcE3GmsTkXqfDk8Ac.RRNuLNvFn8l6dIC0nc_h52gJADBsAmYPvhMdZxaC85I&dib_tag=se&keywords=realme+c53&qid=1709290525&s=electronics&sprefix=realme+c5%2Celectronics%2C415&sr=1-4&linkCode=ll1&tag=nikhil834134-21&linkId=cd9ed9bd2d820e34686f2c87f8eac176&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="8699" data-brand="motorola">
+                    <div class="mobile-img">
+                        <img src="15.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Moto G24 Power</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (2 GHz,Dual Core + 1.7 GHz,Hexa Core)</li>
+                            <li>Processor:MeidaTek Helio G85</li>
+                            <li>Ram:4 GB RAM</li>
+                            <li>Front Cam:16MP</li>
+                            <li>Rear Cam:50MP+2MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:4G</li>
+                            <li>Screen Size:6.56 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Motorola-Storage-Expandable-MediaTek-TurboPower/dp/B0CV497V1B?crid=1ZZR82EHFX239&dib=eyJ2IjoiMSJ9.rMHhNfyzLFtxkOD4Vr5KmSz0LqHRvLkIS3faKPHRJxVZyv8OUyJkWEgeYn_ZYDrsurdsONTD1pq2JuQBDdfZlYZhBKUf6qGfyBwEdKKYemkXYphYRKkQcCHffbd14co1BM0pOU1CKhqQRIvR1zAtboIdAvZ83c8V2jo-HCSwbN-NyJvLnMV4ZG689-Ms4yB3tdA8oyDm6iC6vpxdlv8p1CdtxWF42yjtMAWZB3sKdxqk6iYrpRFCOHxgaxjinaFoEBzDU_5efXMQoVCWRPVO49ndzivK_MuGRGMmCHJ_3fw.7HsNECnlC3DqhE1sme7SxfQfZk_eWJvswf5rhGJENHE&dib_tag=se&keywords=moto+g24&qid=1709290597&s=electronics&sprefix=moto+g24%2Celectronics%2C307&sr=1-2&linkCode=ll1&tag=nikhil834134-21&linkId=4b54a355e3c4f5c2f3ba4b6a3c49548b&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="5999" data-brand="poco">
+                    <div class="mobile-img">
+                        <img src="16.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>POCO C55</h2>
+                        <ul>
+                            <li>Operating system:Android v12</li>
+                            <li>Processor Cores:Octa core (2 GHz,Dual Core + 1.8 GHz,Hexa Core)</li>
+                            <li>Processor:MediaTek Helio G85</li>
+                            <li>Ram:4 GB RAM</li>
+                            <li>Front Cam:5MP</li>
+                            <li>Rear Cam:50MP+2MP</li>
+                            <li>Storage:64 GB Internal Storage</li>
+                            <li>Connectivity:4G</li>
+                            <li>Screen Size:6.71 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/POCO-C55-Forest-Green-RAM/dp/B0BX9VFHVQ?crid=2WGLPLOFVX4D0&dib=eyJ2IjoiMSJ9.0SSBdjAsZUZDw6g55Zf927RfID25Ukzb1ApEIuFQeG_zLBfRP3fehCHIm218iaJnoNWBeR-Q678pezPymor0VOOPqwhiWmdFy4nE04ZjGvNA0VjhUswmH9ljtnJ5QZO5LZcFi36ExaYWiPyn9e7CyZiHZAlyvbFgv6lGU9EySE2WkRopUK7GUj1Gxfsl5BLo_tcAUGsqnDox3bb9MP73lCvgBJGUrNQILUO_xrbsYlnlIee4FaL4ij3AhegH1qRFrbp5y5VAVfXoyua2N-AtgOGEqMShIllm2V0Fy2xLPQI.a1ZlLIITWkGTvIdu7YkUp8g7fMfyHHlqT909-WWA2og&dib_tag=se&keywords=poco+c55&qid=1709290648&s=electronics&sprefix=poco+c5%2Celectronics%2C312&sr=1-5&linkCode=ll1&tag=nikhil834134-21&linkId=f8717bb3c16183c13275329e4c05123c&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="15774" data-brand="motorola">
+                    <div class="mobile-img">
+                        <img src="17.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Moto G54</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (2.2 GHz,Dual Core + 2 GHz,Hexa Core)</li>
+                            <li>Processor:MediaTek Dimensity 7020</li>
+                            <li>Ram:8 GB RAM</li>
+                            <li>Front Cam:16MP</li>
+                            <li>Rear Cam:50MP+8MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.5 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Motorola-Turbocharging-UltraPixel-Technology-Water-Repellent/dp/B0CKLRV6X9?crid=3QZN956432LAA&dib=eyJ2IjoiMSJ9._JKCvm1fmdIP85SPTt9ar-bQASEWYxgvBvomLWLMyl82HGEWJlID1Ow-lpUrZKIuyiFhyP5QCAar1TjpQzO7uqnzdedPCz_XmL0j-btihY8b9UVDWo49Ay1THy4K94MuQ013tanRo9IoEiJgcYArkCX0Cb0n0kAl_U9C2bKYGSJJuO8EsD3VzyZh_Jvn_64cB944c92G-yVir_-Ilrw0u7GRHJRDV-SyjO9OdcVgsYCSj0UBqOccywH6REnFjMQNVG8Yb7NomhPzUmIWoRbof8MCWc-u7oCd97nt-W86j9E.rHd9HIuYPnVS0__Oc0BA_yMGGV34IsRQZ6RSUGkdZ7M&dib_tag=se&keywords=moto+g54&qid=1709290696&s=electronics&sprefix=moto+g5%2Celectronics%2C310&sr=1-1&linkCode=ll1&tag=nikhil834134-21&linkId=60460ee2ae43bd23f7d355d81c184a56&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="26290" data-brand="motorola">
+                    <div class="mobile-img">
+                        <img src="18.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Motorola Edge 40 Neo</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (2.5 GHz,Dual Core + 2 GHz,Hexa Core)</li>
+                            <li>Processor:MediaTek Dimensity 7030</li>
+                            <li>Ram:8 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+13MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.55 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Motorola-Edge-Peach-128GB-Storage/dp/B0CTGZ2JW8?crid=1V64S7AKAG6Q6&dib=eyJ2IjoiMSJ9.yh11JB6xXEiOEmhZTYCY5OAfJfm4VeqhXDZIkIssVXTkmiwAsKWgf3gL15EP6pA26iIClQPNeiFYMGFHPcAYNO-3YDh7cfE5QeWm2POc8ZEeDCizAmWdwoIOKonsy-Rk6et1yhWyJF39NvVv2y3AIjE0Gt4DV-_6NkMUTkslXP6Yc-ku5U8YDRCopV5Rr6FuR4Nt2_LN4OULdZ9Fk2M84dmCMtwx40j-GXpK6Vsb7QPwAJ2DMtrMTX5Qatjkod8ZBr4Lr4EknEi_qaiDISCiIp8XiwXBrLYyy0ZHBCz686U.irQAcm4PnfgVPRDA1uhKUNCIBiA8tqAZuDPUqVRNwyo&dib_tag=se&keywords=moto+edge+40+neo&qid=1709290783&s=electronics&sprefix=moto+edge+%2Celectronics%2C293&sr=1-2&linkCode=ll1&tag=nikhil834134-21&linkId=25dd975f839f61b5aa6c015e4f36e7e3&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="17990" data-brand="oneplus">
+                    <div class="mobile-img">
+                        <img src="19.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>OnePlus Nord CE 3 Lite</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (2.2 GHz,Dual Core + 1.7 GHz,Hexa Core)</li>
+                            <li>Processor:Snapdragon 695</li>
+                            <li>Ram:8 GB RAM</li>
+                            <li>Front Cam:16MP</li>
+                            <li>Rear Cam:108MP+2MP+2MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.72 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/OnePlus-Nord-Chromatic-128GB-Storage/dp/B0BY8MCQ9S?crid=2JTO7XBEFCIR1&dib=eyJ2IjoiMSJ9.o2NRazz28NaKSpt21GxqQB1XzYA-ScC0ILls-JErYpebP_FyqAAl53R0wpbHQcWuZPX0YnLhvl0_3FgdMM2y_xlFbSTUKQtCBOvIGv2cMK4czd4EAeFDfTnGLxhxcQyHyMivDLFTlgHPJ8kBdOhNKWhbNTkQ7aoX8Ah65CNHKTX4obh413MP_QkGPWXyHp6e7xLSD4MO-G5ZfKumW6FsJMJ5mZ0vg1jI-hE_7T9LFq1kArQF3JrEoZU1g8QOX7FtIEHpiLPb_iGdzx7tqMkyqOh6nTN889alvfD11pHdczU.VA3NPLZWW0aqFec6Kd0xvqzWQ912AA_T7jfWxnimUhQ&dib_tag=se&keywords=oneplus%2Bnord%2Bce%2B3&qid=1709290843&s=electronics&sprefix=one%2Bplus%2Bnor%2Bce%2B3%2Celectronics%2C280&sr=1-5&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=70c19bf1dac3bc7872962b7990a4c20d&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="24999" data-brand="oneplus">
+                    <div class="mobile-img">
+                        <img src="20.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>OnePlus Nord CE 3</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (2.7 GHz,Single Core + 2.2 GHz,Tri Core + 1.9 GHz,Quad Core)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:8 GB RAM</li>
+                            <li>Front Cam:16MP</li>
+                            <li>Rear Cam:50MP+8MP+2MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.7 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/OnePlus-Nord-Surge-128GB-Storage/dp/B0C9QS5G2R?crid=3SJSH3AGVRTVR&dib=eyJ2IjoiMSJ9.o2NRazz28NaKSpt21GxqQB1XzYA-ScC0ILls-JErYpebP_FyqAAl53R0wpbHQcWuZPX0YnLhvl0_3FgdMM2y_xlFbSTUKQtCBOvIGv2cMK4czd4EAeFDfTnGLxhxcQyHyMivDLFTlgHPJ8kBdOhNKWhbNTkQ7aoX8Ah65CNHKTX4obh413MP_QkGPWXyHp6e7xLSD4MO-G5ZfKumW6FsJMJ5mZ0vg1jI-hE_7T9LFq1kArQF3JrEoZU1g8QOX7FtIEHpiLPb_iGdzx7tqMkyqOh6nTN889alvfD11pHdczU.VA3NPLZWW0aqFec6Kd0xvqzWQ912AA_T7jfWxnimUhQ&dib_tag=se&keywords=oneplus%2Bnord%2Bce%2B3&qid=1709290919&s=electronics&sprefix=oneplus%2Bnord%2Bce%2B3%2Celectronics%2C600&sr=1-3&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=6c28587398b9e7ea15a98b5d6ffd17d3&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="13499" data-brand="redmi">
+                    <div class="mobile-img">
+                        <img src="21.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Xiaomi Redmi 12</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (2.2 GHz, Dual core + 1.8 GHz,Hexa Core)</li>
+                            <li>Processor:Snapdragon 4 Gen 2</li>
+                            <li>Ram:4 GB RAM</li>
+                            <li>Front Cam:8MP</li>
+                            <li>Rear Cam:50MP+2MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.79 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Redmi-Moonstone-Silver-6GB-128GB/dp/B0C9J9CZR6?crid=3SHU305ZGPUVQ&dib=eyJ2IjoiMSJ9.1-Jqbig06qOC6rWg7uNcU5fGEfc7jmC4y-Oieplt8lpnyEmg6fc81kq_JOJ9wnKx5EfPAYwW6CbQugxosEGyz2Mzk2nEjhq1-KVIQZmtFOU06sj9lradIVDFH6ZDuGXRFzbYlSoY-2YJ16OTGpeL-igEdf_wwxDlTqnJSZ_wSRGcnE8pd5-Tj7derjpS-b8uApHCC72mQb3GxIw09LEry3M3R-L0c51rA52sQvIz6FUwTwc5leEiToO2XVmXe0LwQcRFtzPTmlC4zQ7oUG_5CpucR0h18A7EauJ6CWkW7CQ.Yf3ujd4MGl8JS9Q0nMXUzugAXy5z4NjT06gLdk6XoyU&dib_tag=se&keywords=redmi%2B12&qid=1709290969&s=electronics&sprefix=redmi%2B1%2Celectronics%2C340&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&th=1&linkCode=ll1&tag=nikhil834134-21&linkId=cca79d43a0c63900f175a9a92d5c3db5&language=en_IN&ref_=as_li_ss_tl" taget="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="27999" data-brand="realme">
+                    <div class="mobile-img">
+                        <img src="22.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>realme 11 Pro</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (2.6 GHz, Dual core + 2 GHz,Hexa Core)</li>
+                            <li>Processor:MediaTek Dimensity 7050</li>
+                            <li>Ram:8 GB RAM</li>
+                            <li>Front Cam:16MP</li>
+                            <li>Rear Cam:100MP+2MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.7 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/realme-Sunrise-Prolight-Dimensity-SUPERVOOC/dp/B0C78GR61T?crid=2SYY3F7DAX1MF&dib=eyJ2IjoiMSJ9.poBY6cmbF8qj_QmEuvBsskcyGlVvpaQpjbSmazECj8VQ1xmeLkXugfj10cQL_bJZ2OeqZ36vHKT5Dr8iJ-7e3uLC7lVPhb42A7qHYyoekI-LqMks-3dy-KResOGwVPlcaWWIcMAkCN8_tNgoisxFRViVxxE0VDRZZVUsgfg1WjBawZs0N5VCG1sAvX1fG1ERhb5hu0S0FgkFW8DhHf0YHJaV44a9cI5_V-i9kZ5Gj-XQ0wC25L-NIAS6k8tNSxd6yu9dlEMmn714Amflo9UJxjMSInZRqr1XSJoHP18-oPg.pnwQcOhg6AqPGsj_is-o5oIQZUab0ltQ6bXNIPLSDgc&dib_tag=se&keywords=realme+11+pro&qid=1709291020&s=electronics&sprefix=reralme+11+pro%2Celectronics%2C336&sr=1-1&linkCode=ll1&tag=nikhil834134-21&linkId=b6617c4dcc638b75cb5bb27408a5f466&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="21795" data-brand="poco">
+                    <div class="mobile-img">
+                        <img src="23.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>POCO X6</h2>
+                        <ul>
+                            <li>Operating system:Android v13</li>
+                            <li>Processor Cores:Octa core (2.4 GHz, Quad core + 1.95 GHz, Quad core)</li>
+                            <li>Processor:Snapdragon 7S Gen 2</li>
+                            <li>Ram:8 GB RAM</li>
+                            <li>Front Cam:16MP</li>
+                            <li>Rear Cam:64MP+8MP+2MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.67 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Poco-Pro-8GB-256GB-Storage/dp/B0CSDSJ31L?crid=26WAYTRZV8CEZ&dib=eyJ2IjoiMSJ9.1bEsT-Dne77Sx49DqQ7YvdwS8_8B_eaWXI5VHKhtEFd7icudTCAc_bOThwY7whv0V1BFpy9uzbj5QTOZIWjaC9qePYGaMGKmzjmnXEcvvcT2sxwcR9Z4TZE5D7cQjdlvyKgnFgGL-I5nwC4UsgZPsjg13IKFZbEZgU__qotiukA8_dV3iCRm13pAQpqQCjumJ6dTT18h91RTsCkmvq4z4UANMFJ1sPvcB4IWkFHymlK215AGqFCyFFyOeyQt0IGZV-A61kZspg2iO_r0-PnmYHZIujk6l_mAVftWalA_Mf8.FhiKXazupBNVlnKOglqaBpu_QJ50Oc4JSGaSW-gxn8c&dib_tag=se&keywords=poco+x6&qid=1709291121&s=electronics&sprefix=poco+x%2Celectronics%2C830&sr=1-2&linkCode=ll1&tag=nikhil834134-21&linkId=df07ecc3e7f5101dffedf6e58bcbbbf6&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="72999" data-brand="apple">
+                    <div class="mobile-img">
+                        <img src="24.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Apple iPhone 15</h2>
+                        <ul>
+                            <li>Operating system:iOS v17</li>
+                            <li>Processor Cores:Hexa core (3.46 GHz, Dual Core + 2.02 GHz,Quad core)</li>
+                            <li>Processor:Apple A16 Bionic</li>
+                            <li>Ram:6 GB RAM</li>
+                            <li>Front Cam:12MP</li>
+                            <li>Rear Cam:48MP+12MP</li>
+                            <li>Storage:128 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.1 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Apple-iPhone-15-128-GB/dp/B0CHX2F5QT?crid=38TE6990DWH78&dib=eyJ2IjoiMSJ9.8-aKrERwPzdGyJWfWOa56GxHt3lPSumQdiYENOIE4aS4nrBHk0q7-6xivRGXMniwCXl-FkCToLwcz-cYGgEMiUuvHJ8VquA3TWzGBkndrf4LkrlAYJ8lZ0myEALYk1lVOysbZmFQIwZLxU-SXWwWbU3N8ZECbd5x-TBmpm59ocAU4e11lNt-uFUmxpr7Oz8j_487DUlkziGyQBDH866BQd9Kdte4Ocn4S_Qs0_QVKoPd9Lu6RYDUdZBR7AQPkTdpe2hVvZ1yR5PddRXkTTfWDDSX9c_IH7uoLWwzgoRXgv4.qIYyPy7D6voAdocUpjZRWgUbGsVTNJy3BLqvpNmt0Tg&dib_tag=se&keywords=iphone+15&qid=1709291168&s=electronics&sprefix=iphone+1%2Celectronics%2C333&sr=1-1-spons&sp_csd=d2lkZ2V0TmFtZT1zcF9hdGY&psc=1&linkCode=ll1&tag=nikhil834134-21&linkId=09b473c92b2aa9ae79ce537c5af5c5fe&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="148900" data-brand="apple">
+                    <div class="mobile-img">
+                        <img src="25.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Apple iPhone 15 Pro Max</h2>
+                        <ul>
+                            <li>Operating system:iOS v17</li>
+                            <li>Processor Cores:Hexa core (3.78 GHz, Dual core+ 2.11 GHz, Quad core)</li>
+                            <li>Processor:Apple A17 Pro</li>
+                            <li>Ram:8 GB RAM</li>
+                            <li>Front Cam:12MP</li>
+                            <li>Rear Cam:48MP+12MP+12MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                            <li>Screen Size:6.7 inches</li>
+                        </ul>
+                        <a href="https://www.amazon.in/Apple-iPhone-Pro-Max-256/dp/B0CHX68YG9?crid=38TE6990DWH78&dib=eyJ2IjoiMSJ9.8-aKrERwPzdGyJWfWOa56GxHt3lPSumQdiYENOIE4aS4nrBHk0q7-6xivRGXMniwCXl-FkCToLwcz-cYGgEMiUuvHJ8VquA3TWzGBkndrf4LkrlAYJ8lZ0myEALYk1lVOysbZmFQIwZLxU-SXWwWbU3N8ZECbd5x-TBmpm59ocAU4e11lNt-uFUmxpr7Oz8j_487DUlkziGyQBDH866BQd9Kdte4Ocn4S_Qs0_QVKoPd9Lu6RYDUdZBR7AQPkTdpe2hVvZ1yR5PddRXkTTfWDDSX9c_IH7uoLWwzgoRXgv4.qIYyPy7D6voAdocUpjZRWgUbGsVTNJy3BLqvpNmt0Tg&dib_tag=se&keywords=iphone+15&qid=1709291168&s=electronics&sprefix=iphone+1%2Celectronics%2C333&sr=1-19&linkCode=ll1&tag=nikhil834134-21&linkId=3ac2277679ae26a564bcb6acd3f36e3b&language=en_IN&ref_=as_li_ss_tl" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="10.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" target="blank" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="10.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="10.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="10.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="10.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="10.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="10.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    </div>
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                </div>
+                <div class="mobile" data-price="33340" data-brand="sony">
+                    <div class="sub-mobile">
+                    <div class="mobile-img">
+                        <img src="1.jpeg" alt="Mobile">
+                    <div class="specs">
+                        <h2>Samsung s23 ultra</h2>
+                        <ul>
+                            <li>Operating system:Android v14</li>
+                            <li>Processor Cores:Octa core (3.3 GHz, Single core, Kryo 780 + 2.84 GHz, Tri core, Kryo 780 + 2.42 GHz, Quad core, Kryo 780)</li>
+                            <li>Processor:Snapdragon 8 Gen 3</li>
+                            <li>Ram:12 GB RAM</li>
+                            <li>Front Cam:32MP</li>
+                            <li>Rear Cam:50MP+48MP+64MP</li>
+                            <li>Storage:256 GB Internal Storage</li>
+                            <li>Connectivity:5G</li>
+                        </ul>
+                        <a href="https://www.amazon.com/dp/B08N5WRWNW" class="buy-button">Buy Now</a>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pagination">
+        <button id="prevPageButton">Previous</button>
+        <span>Page <span id="currentPage"></span> of <span id="totalPages"></span></span>
+        <button id="nextPageButton">Next</button>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
