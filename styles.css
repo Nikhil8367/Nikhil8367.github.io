@@ -48,18 +48,6 @@ body {
         width: 100%;
       }
       
-      /* For screens larger than 768px (laptops) */
-      @media screen and (min-width: 769px) {
-        .mobile-img {
-          max-width: 30%; /* Adjusted width for laptop screens */
-          width: 30%;
-        }
-      
-        .specs {
-          max-width: 70%; /* Adjusted width for laptop screens */
-          width: 70%;
-        }
-      }
       
 .specs ul {
   list-style-type: none;
@@ -105,23 +93,30 @@ body {
 
   .specs {
     width: 70%;
+    max-width: 70%
   }
 }
 /* For screens up to 768px (smaller screens) */
+/* For screens up to 768px (smaller screens) */
 @media screen and (max-width: 768px) {
+  .sub-mobile {
+    flex-direction: column; /* Arrange items vertically */
+  }
+
   .mobile-img {
-    width: 100%;
-    max-width: 100%;
-    margin-right: 0;
-    margin-bottom: 15px;
+    max-width: 100%; /* Adjust the width to fit the container */
+    border-radius: 10px 10px 0 0; /* Adjust border radius */
+    overflow: hidden;
   }
 
   .specs {
-    width: 100%;
-    margin-top: 15px; /* Adding margin-top to separate image and specs */
-    overflow-x: auto; /* Allowing horizontal scrolling if necessary */
+    max-width: 100%; /* Adjust the width to fit the container */
+    border-radius: 0 0 10px 10px; /* Adjust border radius */
+    background-color: #fff; /* Match background color */
+    padding: 20px; /* Add padding */
   }
 }
+
 
 
           #filtersContainer {
