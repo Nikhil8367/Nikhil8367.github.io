@@ -65,23 +65,25 @@ document.addEventListener('DOMContentLoaded', function() {
     // Initialize budget range
     handleBudgetRange();
 });
-        function toggleFilters() {
-            var filtersContainer = document.getElementById('filtersContainer');
-            var overlay = document.querySelector('.overlay');
-            filtersContainer.style.display = (filtersContainer.style.display === 'none' || filtersContainer.style.display === '') ? 'block' : 'none';
-            overlay.style.display = (overlay.style.display === 'none' || overlay.style.display === '') ? 'block' : 'none';
-        }
 
-        // Function to hide filters container
-        function hideFilters() {
-            var filtersContainer = document.getElementById('filtersContainer');
-            var overlay = document.querySelector('.overlay');
-            filtersContainer.style.display = 'none';
-            overlay.style.display = 'none';
-        }
+// Function to toggle filters container visibility
+function toggleFilters() {
+    var filtersContainer = document.getElementById('filtersContainer');
+    var overlay = document.querySelector('.overlay');
+    filtersContainer.style.display = (filtersContainer.style.display === 'none' || filtersContainer.style.display === '') ? 'block' : 'none';
+    overlay.style.display = (overlay.style.display === 'none' || overlay.style.display === '') ? 'block' : 'none';
+}
 
-        // Function to filter results based on selected brands
-        function filterResults() {
+// Function to hide filters container
+function hideFilters() {
+    var filtersContainer = document.getElementById('filtersContainer');
+    var overlay = document.querySelector('.overlay');
+    filtersContainer.style.display = 'none';
+    overlay.style.display = 'none';
+}
+
+// Function to filter results based on selected brands
+function filterResults() {
     var selectedBrands = Array.from(document.querySelectorAll('.brand-checkbox:checked')).map(checkbox => checkbox.value.toLowerCase());
     var mobileContainers = document.querySelectorAll('.mobile-container');
     mobileContainers.forEach(function(container) {
@@ -97,23 +99,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 }
 
+// Event listener for click on "Toggle Filters" button
+document.getElementById('toggleFiltersButton').addEventListener('click', toggleFilters);
 
-        // Event listener for click on "Toggle Filters" button
-        document.getElementById('toggleFiltersButton').addEventListener('click', toggleFilters);
+// Event listener for change in brand checkboxes
+var brandCheckboxes = document.querySelectorAll('.brand-checkbox');
+brandCheckboxes.forEach(function(checkbox) {
+    checkbox.addEventListener('change', filterResults);
+});
 
-        // Event listener for change in brand checkboxes
-        var brandCheckboxes = document.querySelectorAll('.brand-checkbox');
-        brandCheckboxes.forEach(function(checkbox) {
-            checkbox.addEventListener('change', filterResults);
-        });
+// Call filterResults initially to ensure correct display
+filterResults();
 
-        // Call filterResults initially to ensure correct display
-        filterResults();
- // Function to handle sorting based on selected option
- 
-
-
-// Event listener for change in sort select
+// Event listener for click on "Reset Filters" button
 document.getElementById('resetFiltersButton').addEventListener('click', function() {
     // Uncheck all brand checkboxes
     document.querySelectorAll('.brand-checkbox:checked').forEach(function(checkbox) {
@@ -126,136 +124,55 @@ document.getElementById('resetFiltersButton').addEventListener('click', function
     // Call filterResults to apply the reset filters
     filterResults();
 });
-    document.addEventListener('DOMContentLoaded', function() {
-        // Define sorting functions
-        const sortFunctions = {
-            'name-a-to-z': (a, b) => a.querySelector('.specs h2').textContent.trim().localeCompare(b.querySelector('.specs h2').textContent.trim()),
-            'name-z-to-a': (a, b) => b.querySelector('.specs h2').textContent.trim().localeCompare(a.querySelector('.specs h2').textContent.trim()),
-            'price-low-to-high': (a, b) => parseInt(a.dataset.price) - parseInt(b.dataset.price),
-            'price-high-to-low': (a, b) => parseInt(b.dataset.price) - parseInt(a.dataset.price)
-        };
 
-        // Function to handle sorting based on selected option
-        function handleSorting() {
-            const sortSelect = document.getElementById('sortSelect');
-            const sortingOption = sortSelect.value;
-            const mobileContainers = document.querySelectorAll('.mobile-container');
+document.addEventListener('DOMContentLoaded', function() {
+    // Define sorting functions
+    const sortFunctions = {
+        'name-a-to-z': (a, b) => a.querySelector('.specs h2').textContent.trim().localeCompare(b.querySelector('.specs h2').textContent.trim()),
+        'name-z-to-a': (a, b) => b.querySelector('.specs h2').textContent.trim().localeCompare(a.querySelector('.specs h2').textContent.trim()),
+        'price-low-to-high': (a, b) => parseInt(a.dataset.price) - parseInt(b.dataset.price),
+        'price-high-to-low': (a, b) => parseInt(b.dataset.price) - parseInt(a.dataset.price)
+    };
 
-            mobileContainers.forEach(container => {
-                const mobiles = Array.from(container.querySelectorAll('.mobile'));
-                const sortFunction = sortFunctions[sortingOption];
-
-                if (sortFunction) {
-                    mobiles.sort(sortFunction);
-                    mobiles.forEach(mobile => container.appendChild(mobile));
-                }
-            });
-        }
-
-        // Call handleSorting initially to ensure initial sorting
-        handleSorting();
-
-        // Attach handleSorting function to the change event of sortSelect
-        document.getElementById('sortSelect').addEventListener('change', handleSorting);
-    });
-    document.addEventListener('DOMContentLoaded', function() {
+    // Function to handle sorting based on selected option
+    function handleSorting() {
+        const sortSelect = document.getElementById('sortSelect');
+        const sortingOption = sortSelect.value;
         const mobileContainers = document.querySelectorAll('.mobile-container');
-        const itemsPerPage = 10; // Number of items per page
-        const totalMobiles = mobileContainers[0].querySelectorAll('.mobile').length;
-        const totalPages = Math.ceil(totalMobiles / itemsPerPage);
-        let currentPage = 1;
-    
-        // Function to show only the mobiles for the current page
-        function showCurrentPage(page) {
-            currentPage = page;
-            const startIndex = (page - 1) * itemsPerPage;
-            const endIndex = Math.min(startIndex + itemsPerPage, totalMobiles);
-    
-            mobileContainers.forEach(container => {
-                const mobiles = Array.from(container.querySelectorAll('.mobile'));
-                mobiles.forEach((mobile, index) => {
-                    if (index >= startIndex && index < endIndex) {
-                        mobile.style.display = 'flex';
-                    } else {
-                        mobile.style.display = 'none';
-                    }
-                });
-            });
-    
-            // Update pagination buttons
-            updatePaginationButtons();
-        }
-    
-        // Function to update pagination buttons
-        function updatePaginationButtons() {
-            document.querySelectorAll('.page').forEach((pageButton, index) => {
-                const pageNumber = index + 1;
-                pageButton.textContent = pageNumber;
-                if (pageNumber === currentPage) {
-                    pageButton.classList.add('active');
-                } else {
-                    pageButton.classList.remove('active');
-                }
-            });
-        }
-    
-        // Function to handle pagination button clicks
-        function handlePagination() {
-            const newPage = parseInt(this.textContent);
-            if (newPage !== currentPage) {
-                showCurrentPage(newPage);
-                handleFilters(); // Apply filters after pagination
-            }
-        }
-    
-        // Add event listeners for page buttons
-        document.querySelectorAll('.page').forEach(pageButton => {
-            pageButton.addEventListener('click', handlePagination);
-        });
-    
-        // Show the first page initially
-        showCurrentPage(1);
-    
-        // Function to handle previous page button click
-        document.getElementById('prevPage').addEventListener('click', function() {
-            if (currentPage > 1) {
-                showCurrentPage(currentPage - 1);
-                handleFilters(); // Apply filters after navigating to previous page
-            }
-        });
-    
-        // Function to handle next page button click
-        document.getElementById('nextPage').addEventListener('click', function() {
-            if (currentPage < totalPages) {
-                showCurrentPage(currentPage + 1);
-                handleFilters(); // Apply filters after navigating to next page
-            }
-        });
-    });
-    document.addEventListener('DOMContentLoaded', function() {
-        // Your existing JavaScript code here
 
-        // Function to add more pages dynamically
-        function addPaginationButtons(totalPages) {
-            const paginationContainer = document.getElementById('pagination');
-            for (let i = 1; i <= totalPages; i++) {
-                const pageButton = document.createElement('button');
-                pageButton.classList.add('page');
-                pageButton.textContent = i;
-                paginationContainer.insertBefore(pageButton, document.getElementById('nextPage'));
-                // Add event listener to navigate to the corresponding page
-                pageButton.addEventListener('click', function() {
-                    showCurrentPage(i);
-                });
-            }
-        }
+        mobileContainers.forEach(container => {
+            const mobiles = Array.from(container.querySelectorAll('.mobile'));
+            const sortFunction = sortFunctions[sortingOption];
 
-        // Function to show only the mobiles for the current page
-        function showCurrentPage(page) {
-            const itemsPerPage = 10; // Number of items per page
-            const startIndex = (page - 1) * itemsPerPage;
-            const endIndex = startIndex + itemsPerPage;
-            const mobiles = document.querySelectorAll('.mobile');
+            if (sortFunction) {
+                mobiles.sort(sortFunction);
+                mobiles.forEach(mobile => container.appendChild(mobile));
+            }
+        });
+    }
+
+    // Call handleSorting initially to ensure initial sorting
+    handleSorting();
+
+    // Attach handleSorting function to the change event of sortSelect
+    document.getElementById('sortSelect').addEventListener('change', handleSorting);
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileContainers = document.querySelectorAll('.mobile-container');
+    const itemsPerPage = 10; // Number of items per page
+    const totalMobiles = mobileContainers[0].querySelectorAll('.mobile').length;
+    const totalPages = Math.ceil(totalMobiles / itemsPerPage);
+    let currentPage = 1;
+
+    // Function to show only the mobiles for the current page
+    function showCurrentPage(page) {
+        currentPage = page;
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = Math.min(startIndex + itemsPerPage, totalMobiles);
+
+        mobileContainers.forEach(container => {
+            const mobiles = Array.from(container.querySelectorAll('.mobile'));
             mobiles.forEach((mobile, index) => {
                 if (index >= startIndex && index < endIndex) {
                     mobile.style.display = 'flex';
@@ -263,18 +180,150 @@ document.getElementById('resetFiltersButton').addEventListener('click', function
                     mobile.style.display = 'none';
                 }
             });
-        }
+        });
 
-        // Function to calculate total pages and add pagination buttons
-        function setupPagination() {
-            const mobileContainers = document.querySelectorAll('.mobile-container');
-            const totalMobiles = mobileContainers[0].querySelectorAll('.mobile').length;
-            const totalPages = Math.ceil(totalMobiles / 10); // Assuming 10 items per page
-            addPaginationButtons(totalPages);
-            // Show the first page initially
-            showCurrentPage(1);
-        }
+        // Update pagination buttons
+        updatePaginationButtons();
 
-        // Initialize pagination setup
-        setupPagination();
+        // Scroll to top
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+
+    // Function to update pagination buttons
+    function updatePaginationButtons() {
+        document.querySelectorAll('.page').forEach((pageButton, index) => {
+            const pageNumber = index + 1;
+            pageButton.textContent = pageNumber;
+            if (pageNumber === currentPage) {
+                pageButton.classList.add('active');
+            } else {
+                pageButton.classList.remove('active');
+            }
+        });
+
+        // Add event listeners for page buttons
+        document.querySelectorAll('.page').forEach(pageButton => {
+            pageButton.addEventListener('click', handlePagination);
+        });
+    }
+
+    // Function to handle pagination button clicks
+    function handlePagination() {
+        const newPage = parseInt(this.textContent);
+        if (newPage !== currentPage) {
+            showCurrentPage(newPage);
+            handleFilters(); // Apply filters after pagination
+        }
+    }
+
+    // Show the first page initially
+    showCurrentPage(1);
+
+    // Function to handle previous page button click
+    document.getElementById('prevPage').addEventListener('click', function() {
+        if (currentPage > 1) {
+            showCurrentPage(currentPage - 1);
+            handleFilters(); // Apply filters after navigating to previous page
+        }
     });
+
+    // Function to handle next page button click
+    document.getElementById('nextPage').addEventListener('click', function() {
+        if (currentPage < totalPages) {
+            showCurrentPage(currentPage + 1);
+            handleFilters(); // Apply filters after navigating to next page
+        }
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Your existing JavaScript code here
+
+    function addPaginationButtons(totalPages) {
+        const paginationContainer = document.getElementById('pagination');
+        paginationContainer.innerHTML = ''; // Clear existing buttons before adding new ones
+        
+        // Previous Page Button
+        const prevButton = document.createElement('button');
+        prevButton.textContent = 'Previous';
+        prevButton.addEventListener('click', function() {
+            showCurrentPage(currentPage - 1);
+            scrollToTop(); // Scroll to top on previous button click
+        });
+        paginationContainer.appendChild(prevButton);
+        
+        // Page Buttons
+        for (let i = 1; i <= totalPages; i++) {
+            const pageButton = document.createElement('button');
+            pageButton.classList.add('page');
+            pageButton.textContent = i;
+            paginationContainer.appendChild(pageButton); // Append the button to the container
+            // Add event listener to navigate to the corresponding page
+            pageButton.addEventListener('click', function() {
+                showCurrentPage(i);
+                scrollToTop(); // Scroll to top on page button click
+            });
+        }
+
+        // Next Page Button
+        const nextButton = document.createElement('button');
+        nextButton.textContent = 'Next';
+        nextButton.addEventListener('click', function() {
+            showCurrentPage(currentPage + 1);
+            scrollToTop(); // Scroll to top on next button click
+        });
+        paginationContainer.appendChild(nextButton);
+    }
+
+    let currentPage = 1; // Define currentPage outside of showCurrentPage
+
+    // Function to show only the mobiles for the current page
+    function showCurrentPage(page) {
+        currentPage = page;
+        const itemsPerPage = 10; // Number of items per page
+        const startIndex = (page - 1) * itemsPerPage;
+        const endIndex = startIndex + itemsPerPage;
+        const mobiles = document.querySelectorAll('.mobile');
+        mobiles.forEach((mobile, index) => {
+            if (index >= startIndex && index < endIndex) {
+                mobile.style.display = 'flex';
+            } else {
+                mobile.style.display = 'none';
+            }
+        });
+        updatePaginationButtons(currentPage);
+    }
+
+    // Function to calculate total pages and add pagination buttons
+    function setupPagination() {
+        const mobileContainers = document.querySelectorAll('.mobile-container');
+        const totalMobiles = mobileContainers[0].querySelectorAll('.mobile').length;
+        const totalPages = Math.ceil(totalMobiles / 10); // Assuming 10 items per page
+        addPaginationButtons(totalPages);
+        // Show the first page initially
+        showCurrentPage(1);
+    }
+
+    // Initialize pagination setup
+    setupPagination();
+
+    // Function to update pagination buttons
+    function updatePaginationButtons(currentPage) {
+        const pageButtons = document.querySelectorAll('.page');
+        pageButtons.forEach(button => {
+            const pageNumber = parseInt(button.textContent);
+            if (pageNumber === currentPage) {
+                button.classList.add('active');
+            } else {
+                button.classList.remove('active');
+            }
+        });
+    }
+
+    // Function to scroll to top
+    function scrollToTop() {
+        document.body.scrollTop = 0; // For Safari
+        document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE, and Opera
+    }
+});
