@@ -104,7 +104,7 @@ body {
   }
   
   .mobile-img img {
-    width: 40%;
+    width: 10%;
     height: auto;
     object-fit: cover;
   }
