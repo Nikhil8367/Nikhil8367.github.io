@@ -328,4 +328,11 @@ body {
 .range-slider::-moz-range-thumb:focus {
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
+/* Active Page Button Style */
+.page.active {
+  background-color: #007bff; /* Change background color */
+  color: #fff; /* Change text color */
+  border: 2px solid #0056b3; /* Add border */
+  /* Add any other styles to make it visually distinct */
+}
 
