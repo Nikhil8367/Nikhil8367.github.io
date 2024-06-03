@@ -1,4 +1,4 @@
-body {
+ body {
   font-family: 'Arial', sans-serif;
   color: #fff;
   margin: 0;
@@ -11,15 +11,9 @@ body {
 
       .mobile-container {
         width: 100%;
-        padding: 20px;
+        padding: 15px;
         box-sizing: border-box;
       }
-      
-      .sub-mobile {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      
       .mobile {
         background-color: #fff;
         border-radius: 10px;
@@ -28,21 +22,6 @@ body {
         margin-bottom: 20px;
         width: 100%;
       }
-      
-      .mobile-img {
-        width: 100%;
-        max-width: 50%;
-        border-top-left-radius: 10px;
-        border-bottom-left-radius: 10px;
-        overflow: hidden;
-      }
-      
-      .mobile-img img {
-        width: 50%;
-        height: auto;
-        object-fit: cover;
-      }
-      
       .specs {
         padding: 20px;
         width: 100%;
@@ -86,20 +65,33 @@ body {
 
 /* For screens larger than 768px (laptops) */
 @media screen and (min-width: 769px) {
-  .mobile-img {
-    max-width: 50%;
-    width: 30%;
+  .mobile {
+    display: flex;
+    flex-direction: row;
   }
-
   .specs {
     width: 70%;
     max-width: 70%
   }
+  .mobile-img {
+    max-width: 50%;
+    width: 30%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .mobile-img img {
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+  }
 }
 /* For screens up to 768px (smaller screens) */
-/* For screens up to 768px (smaller screens) */
 @media screen and (max-width: 768px) {
-  .sub-mobile {
+
+  .mobile {
+    display: flex;
     flex-direction: column; /* Arrange items vertically */
   }
 
@@ -116,9 +108,6 @@ body {
     padding: 20px; /* Add padding */
   }
 }
-
-
-
           #filtersContainer {
       width: 100%; /* 4/4 of the webpage width for mobile devices */
       position: absolute; /* Position the filters container absolutely */
