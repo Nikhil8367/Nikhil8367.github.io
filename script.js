@@ -158,4 +158,123 @@ document.getElementById('resetFiltersButton').addEventListener('click', function
         // Attach handleSorting function to the change event of sortSelect
         document.getElementById('sortSelect').addEventListener('change', handleSorting);
     });
-   
+    document.addEventListener('DOMContentLoaded', function() {
+        const mobileContainers = document.querySelectorAll('.mobile-container');
+        const itemsPerPage = 10; // Number of items per page
+        const totalMobiles = mobileContainers[0].querySelectorAll('.mobile').length;
+        const totalPages = Math.ceil(totalMobiles / itemsPerPage);
+        let currentPage = 1;
+    
+        // Function to show only the mobiles for the current page
+        function showCurrentPage(page) {
+            currentPage = page;
+            const startIndex = (page - 1) * itemsPerPage;
+            const endIndex = Math.min(startIndex + itemsPerPage, totalMobiles);
+    
+            mobileContainers.forEach(container => {
+                const mobiles = Array.from(container.querySelectorAll('.mobile'));
+                mobiles.forEach((mobile, index) => {
+                    if (index >= startIndex && index < endIndex) {
+                        mobile.style.display = 'flex';
+                    } else {
+                        mobile.style.display = 'none';
+                    }
+                });
+            });
+    
+            // Update pagination buttons
+            updatePaginationButtons();
+        }
+    
+        // Function to update pagination buttons
+        function updatePaginationButtons() {
+            document.querySelectorAll('.page').forEach((pageButton, index) => {
+                const pageNumber = index + 1;
+                pageButton.textContent = pageNumber;
+                if (pageNumber === currentPage) {
+                    pageButton.classList.add('active');
+                } else {
+                    pageButton.classList.remove('active');
+                }
+            });
+        }
+    
+        // Function to handle pagination button clicks
+        function handlePagination() {
+            const newPage = parseInt(this.textContent);
+            if (newPage !== currentPage) {
+                showCurrentPage(newPage);
+                handleFilters(); // Apply filters after pagination
+            }
+        }
+    
+        // Add event listeners for page buttons
+        document.querySelectorAll('.page').forEach(pageButton => {
+            pageButton.addEventListener('click', handlePagination);
+        });
+    
+        // Show the first page initially
+        showCurrentPage(1);
+    
+        // Function to handle previous page button click
+        document.getElementById('prevPage').addEventListener('click', function() {
+            if (currentPage > 1) {
+                showCurrentPage(currentPage - 1);
+                handleFilters(); // Apply filters after navigating to previous page
+            }
+        });
+    
+        // Function to handle next page button click
+        document.getElementById('nextPage').addEventListener('click', function() {
+            if (currentPage < totalPages) {
+                showCurrentPage(currentPage + 1);
+                handleFilters(); // Apply filters after navigating to next page
+            }
+        });
+    });
+    document.addEventListener('DOMContentLoaded', function() {
+        // Your existing JavaScript code here
+
+        // Function to add more pages dynamically
+        function addPaginationButtons(totalPages) {
+            const paginationContainer = document.getElementById('pagination');
+            for (let i = 1; i <= totalPages; i++) {
+                const pageButton = document.createElement('button');
+                pageButton.classList.add('page');
+                pageButton.textContent = i;
+                paginationContainer.insertBefore(pageButton, document.getElementById('nextPage'));
+                // Add event listener to navigate to the corresponding page
+                pageButton.addEventListener('click', function() {
+                    showCurrentPage(i);
+                });
+            }
+        }
+
+        // Function to show only the mobiles for the current page
+        function showCurrentPage(page) {
+            const itemsPerPage = 10; // Number of items per page
+            const startIndex = (page - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const mobiles = document.querySelectorAll('.mobile');
+            mobiles.forEach((mobile, index) => {
+                if (index >= startIndex && index < endIndex) {
+                    mobile.style.display = 'flex';
+                } else {
+                    mobile.style.display = 'none';
+                }
+            });
+        }
+
+        // Function to calculate total pages and add pagination buttons
+        function setupPagination() {
+            const mobileContainers = document.querySelectorAll('.mobile-container');
+            const totalMobiles = mobileContainers[0].querySelectorAll('.mobile').length;
+            const totalPages = Math.ceil(totalMobiles / 10); // Assuming 10 items per page
+            addPaginationButtons(totalPages);
+            // Show the first page initially
+            showCurrentPage(1);
+        }
+
+        // Initialize pagination setup
+        setupPagination();
+    });
