@@ -266,6 +266,12 @@ body {
   margin-left: auto; /* Center the container horizontally */
   margin-right: auto;
 }
+@media screen and (max-width: 767px) {
+  /* For screens smaller than 768px (mobile devices) */
+  .range-container {
+    width: 100%;
+  }
+}
 
 /* Range Slider */
 .range-slider {
@@ -322,3 +328,4 @@ body {
 .range-slider::-moz-range-thumb:focus {
   box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
 }
+
