@@ -7,27 +7,27 @@ body {
   background-color: #dbdbdb; /* Darker blue background */
 }
 
-      /* Create a slight parallax effect by adjusting background position */
+/* Create a slight parallax effect by adjusting background position */
+.mobile-container {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
 
-      .mobile-container {
-        width: 100%;
-        padding: 15px;
-        box-sizing: border-box;
-      }
-      .mobile {
-        background-color: #fff;
-        border-radius: 10px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        overflow: hidden;
-        margin-bottom: 20px;
-        width: 100%;
-      }
-      .specs {
-        padding: 20px;
-        width: 100%;
-      }
-      
-      
+.mobile {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.specs {
+  padding: 20px;
+  width: 100%;
+}
+
 .specs ul {
   list-style-type: none;
   padding: 0;
@@ -62,7 +62,6 @@ body {
   background-color: #0056b3;
 }
 
-
 /* For screens larger than 768px (laptops) */
 @media screen and (min-width: 769px) {
   .mobile {
@@ -71,100 +70,109 @@ body {
   }
   .specs {
     width: 70%;
-    max-width: 70%
+    max-width: 70%;
   }
   .mobile-img {
-    max-width: 50%;
+    max-width: 30%;
     width: 30%;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     overflow: hidden;
   }
-  
   .mobile-img img {
-    width: 50%;
+    width: 100%;
     height: auto;
     object-fit: cover;
   }
 }
+
 /* For screens up to 768px (smaller screens) */
 @media screen and (max-width: 768px) {
-
   .mobile {
     display: flex;
     flex-direction: column; /* Arrange items vertically */
   }
-
   .mobile-img {
-    max-width: 50%;
-    width: 20%;
+    width: 100%;
     border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
   }
-  
   .mobile-img img {
-    width: 10%;
+    width: 100%;
     height: auto;
     object-fit: cover;
   }
-
   .specs {
-    max-width: 80%; /* Adjust the width to fit the container */
-    border-radius: 0 0 10px 10px; /* Adjust border radius */
-    background-color: #fff; /* Match background color */
+    max-width: 100%; /* Adjust the width to fit the container */
     padding: 20px; /* Add padding */
   }
 }
-          #filtersContainer {
-      width: 100%; /* 4/4 of the webpage width for mobile devices */
-      position: absolute; /* Position the filters container absolutely */
-      top: 0; /* Align to the top */
-      left: 0; /* Align to the left */
-      background-color: #f9f9f9; /* Light gray background */
-      z-index: 1; /* Ensure the filters appear above other content */
-      overflow-y: auto; /* Enable vertical scrolling if needed */
-      height: 100%; /* Set height to full viewport height */
-      padding: 20px; /* Add padding */
-      border-right: 2px solid #ddd; /* Add border on the right for separation */
-  }
 
-  #toggleFiltersButton {
-      display: block; /* Show the toggle button */
-      margin-bottom: 20px; /* Add margin at the bottom */
-      background-color: #007bff; /* Blue background color */
-      color: #fff; /* White text color */
-      border: none; /* Remove border */
-      padding: 10px 20px; /* Add padding */
-      cursor: pointer; /* Add pointer cursor */
-      border-radius: 5px; /* Add border radius */
-      font-size: 16px; /* Adjust font size */
-      text-align: center; /* Align text to the center */
-  }
+#filtersContainer {
+  display: none; /* Initially hide the filters container */
+  width: 25%; /* 25% of the webpage width */
+  position: absolute; /* Position the filters container absolutely */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  background-color: #f9f9f9; /* Light gray background */
+  z-index: 1; /* Ensure the filters appear above other content */
+  overflow-y: auto; /* Enable vertical scrolling if needed */
+  height: 100%; /* Set height to full viewport height */
+  padding: 20px; /* Add padding */
+  border-right: 2px solid #ddd; /* Add border on the right for separation */
+}
 
-  #toggleFiltersButton:hover {
-      background-color: #0056b3; /* Darker blue on hover */
-  }
+#toggleFiltersButton {
+  display: block; /* Show the toggle button */
+  margin-bottom: 20px; /* Add margin at the bottom */
+  background-color: #007bff; /* Blue background color */
+  color: #fff; /* White text color */
+  border: none; /* Remove border */
+  padding: 10px 20px; /* Add padding */
+  cursor: pointer; /* Add pointer cursor */
+  border-radius: 5px; /* Add border radius */
+  font-size: 16px; /* Adjust font size */
+  text-align: center; /* Align text to the center */
+}
 
-  #toggleFiltersButton:focus {
-      outline: none; /* Remove outline on focus */
-  }
+#toggleFiltersButton:hover {
+  background-color: #0056b3; /* Darker blue on hover */
+}
 
-  #sortContainer {
-      margin-top: 50px; /* Adjust margin for smaller screens */
-  }
+#toggleFiltersButton:focus {
+  outline: none; /* Remove outline on focus */
+}
 
-      .full-specs {
-          display: none;
-          text-align: left;
-          margin-left: 20px;
-      }
-      .right-side {
-          text-align: right;
-          padding: 20px;
-          background-color: #f0f0f0;
-      }
-      .right-side {
+#sortContainer {
+  margin-top: 50px; /* Adjust margin for smaller screens */
+  text-align: center;
+}
+
+#sortSelect {
+  padding: 10px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #3498db;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#sortSelect:hover {
+  background-color: #3498db;
+  color: #fff;
+}
+
+.full-specs {
+  display: none;
+  text-align: left;
+  margin-left: 20px;
+}
+
+.right-side {
   text-align: center;
   padding: 20px;
   background-color: #3498db; /* Change the background color */
@@ -172,19 +180,20 @@ body {
   border-radius: 10px; /* Rounded corners */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
   margin-top: 20px; /* Add margin to separate it from the search container */
-  }
+}
 
-  .right-side a {
-      margin-left:15px;
+.right-side a {
+  margin-left: 15px;
   text-decoration: none;
   color: #fff; /* Link color */
   font-weight: bold;
-  }
+}
 
-  .right-side a:hover {
+.right-side a:hover {
   text-decoration: underline; /* Underline on hover */
-  }
-    /* Range slider styles */
+}
+
+/* Range slider styles */
 .range-container {
   text-align: center;
   margin-top: 20px;
@@ -195,12 +204,11 @@ body {
   color: black;
   width: 50%; /* Adjusted width */
   margin: 0 auto; /* Center the range container */
-  position: relative;
-  clear:both;
 }
+
 @media screen and (max-width: 768px) {
   .range-container {
-      width: 100%; /* Full width for smaller screens */
+    width: 100%; /* Full width for smaller screens */
   }
 }
 
@@ -246,272 +254,85 @@ body {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
-      .range-slider:hover {
-          opacity: 1;
-      }
-
-      /* Additional styling for pseudo elements to create gradient overlay */
-      .range-slider::before,
-      .range-slider::after {
-          content: '';
-          position: absolute;
-          width: 100%;
-          height: 100%;
-          top: 0;
-          left: 0;
-          background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
-          pointer-events: none; /* Ensure pseudo elements don't interfere with slider interaction */
-          z-index: 0; /* Behind the slider */
-      }
-
-      .range-slider::after {
-          background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
-          opacity: 0.7;
-      }
-  #searchContainer {
-          text-align: center;
-      }
-
-      #searchInputs {
-          display: inline-flex;
-          align-items: center; /* Align items vertically */
-      }
-
-      #searchInput {
-          flex: 1; /* Take up remaining space */
-          margin-right: 10px; /* Add margin between input and button */
-          padding: 8px;
-          border: 1px solid #ccc;
-          border-radius: 5px;
-          font-size: 16px;
-      }
-
-      #searchButton {
-          background-color: #3498db;
-          color: #fff;
-          border: none;
-          padding: 10px 20px;
-          border-radius: 5px;
-          cursor: pointer;
-          font-size: 16px;
-          transition: background-color 0.3s ease;
-      }
-
-      #searchButton:hover {
-          background-color: #2980b9;
-      }
-      
-  #toggleFiltersButton {
-      display: block; /* Show the toggle button */
-      margin-bottom: 20px; /* Add margin at the bottom */
-      background-color: #007bff; /* Blue background color */
-      color: #fff; /* White text color */
-      border: none; /* Remove border */
-      padding: 10px 20px; /* Add padding */
-      cursor: pointer; /* Add pointer cursor */
-      border-radius: 5px; /* Add border radius */
-      font-size: 16px; /* Adjust font size */
-      text-align: center; /* Align text to the center */
-      transition: width 1s ease; /* Add transition for width change */
-  }
-
-  #toggleFiltersButton:hover {
-      background-color: #0056b3; /* Darker blue on hover */
-  }
-
-  #toggleFiltersButton:focus {
-      outline: none; /* Remove outline on focus */
-  }
-
-
-#toggleFiltersButton:hover {
-  background-color: #2980b9; /* Darker blue on hover */
-}
-#filtersContainer {
-  display: flex; /* Initially hide the filters container */
-  flex-direction: column; /* Arrange items vertically */  
-  float: right; /* Float the filters container to the right */
-  transition: width 1s ease; /* Smooth transition for width changes */
-      position: absolute; /* Position the filters container absolutely */
-      top: 0; /* Align to the top */
-      left: 0; /* Align to the left */
-      background-color: #f9f9f9; /* Light gray background */
-      z-index: 1; /* Ensure the filters appear above other content */
-      overflow-y: auto; /* Enable vertical scrolling if needed */
-      height: 100%; /* Set height to full viewport height */
-      padding: 20px; /* Add padding */
-      border-right: 2px solid #ddd; /* Add border on the right for separation */
-      width: 25%; /* Set width to 75% of the viewport width */
-  }
-  @media screen and (max-width: 768px) {
-  #filtersContainer {
-      width: 75%; /* 4/4 of the webpage width for mobile devices */
-  }
-}
-#filtersContainer {
-      position: absolute; /* Position the filters container absolutely */
-      top: 0; /* Align to the top */
-      left: 0; /* Align to the left */
-      background-color: #f9f9f9; /* Light gray background */
-      z-index: 1; /* Ensure the filters appear above other content */
-      overflow-y: auto; /* Enable vertical scrolling if needed */
-      height: 100%; /* Set height to full viewport height */
-      padding: 20px; /* Add padding */
-  }
-
-
-#filtersContainer {
-  display: none; /* Initially hide the filters container */
+.range-slider:hover {
+  opacity: 1;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 1;
-}
-
-#sortContainer {
-      margin-top: 50px; /* Adjust margin for smaller screens */
-      text-align: center;
-  }
-
-  #sortSelect {
-      padding: 10px;
-      border: 2px solid #3498db;
-      border-radius: 5px;
-      background-color: #fff;
-      color: #3498db;
-      font-size: 16px;
-      cursor: pointer;
-      transition: all 0.3s ease;
-  }
-
-  #sortSelect:hover {
-      background-color: #3498db;
-      color: #fff;
-  }
-#brandFilters {
-  display: flex; /* Initially hide the brand filters */
-  flex-direction: column;
-}
-
-.brand-filter {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  margin-bottom: 7px;
-  cursor: pointer;
-  border-radius: 5px;
-  font-size: 16px;
-  text-align: left;
-  width: fit-content;
-}
-
-.brand-filter:hover {
-  background-color: #0056b3;
-}
-
-.brand-filter:focus {
-  outline: none;
-}
-
-.show-filters #brandFilters {
-  display: flex; /* Show the brand filters when the container has the 'show-filters' class */
-}
-/* CSS for arranging remaining brand filters beside the first two */
-.brand-filter:nth-child(n+3) {
-  margin-left: 10px; /* Add margin to separate buttons */
-}
-
-
-/* CSS for main content */
-.main-content {
-  overflow: hidden; /* Clear floats */
-}
-.hide-filter-btn {
-  background-color: #4CAF50; /* Green */
-  color: white;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
-  transition-duration: 0.4s;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-
-.hide-filter-btn:hover {
-  background-color: #45a049; /* Darker green on hover */
-}
-/* CSS for the "Reset Filters" button */
-.reset-filters-btn {
-  background-color: #e74c3c; /* Red background color */
-  color: #fff; /* White text color */
-  border: none; /* Remove border */
-  padding: 10px 20px; /* Add padding */
-  border-radius: 5px; /* Add border radius */
-  cursor: pointer; /* Add pointer cursor */
-  font-size: 16px; /* Adjust font size */
-  transition: background-color 0.3s ease; /* Add transition effect */
-}
-
-.reset-filters-btn:hover {
-  background-color: #c0392b; /* Darker red on hover */
-}
-.brand-filter label {
-  color: black; /* Set label text color to black */
-  display: block; /* Make labels display as block elements */
-  margin-bottom: 5px; /* Add margin to separate labels */
-  text-align: left; /* Align label text to the left */
-}
-.see-specs-button {
+/* Additional styling for pseudo elements to create gradient overlay */
+.range-slider::before,
+.range-slider::after {
+  content: '';
   position: absolute;
-  top: 10px;
-  right: 10px;
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 30px;
-  font-size: 16px;
-  font-weight: bold;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 100%);
+  pointer-events: none; /* Ensure pseudo elements don't interfere with slider interaction */
+  z-index: 0; /* Behind the slider */
 }
 
-.see-specs-button:hover {
-  background-color: #0056b3;
+.range-slider::after {
+  background: linear-gradient(to right, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.1) 50%, rgba(0, 0, 0, 0) 100%);
+  opacity: 0.7;
 }
-#pagination {
+
+#searchContainer {
   text-align: center;
+}
+
+#searchInputs {
+  display: inline-flex;
+  align-items: center; /* Align items vertically */
+}
+
+#searchInput {
+  flex: 1;
+  padding: 10px;
+  border: 2px solid #3498db;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+}
+
+#searchButton {
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#searchButton:hover {
+  background-color: #2980b9;
+}
+
+#pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-top: 20px;
 }
 
 #pagination button {
-  background-color: #007bff;
+  background-color: #3498db;
   color: #fff;
   border: none;
-  padding: 10px 20px;
   border-radius: 5px;
+  padding: 10px 20px;
   cursor: pointer;
-  margin: 0 5px;
   transition: background-color 0.3s ease;
+  margin: 0 5px;
 }
 
 #pagination button:hover {
-  background-color: #0056b3;
+  background-color: #2980b9;
 }
 
 #pagination span {
   margin: 0 10px;
-  font-weight: bold;
-  color: black;
+  font-size: 16px;
+  color: #333;
 }
